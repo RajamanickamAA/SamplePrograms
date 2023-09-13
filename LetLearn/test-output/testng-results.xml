@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2380" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2380" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
+      <class name="restaassured.GetEmployees">
+        <test-method status="PASS" signature="emp()[pri:0, instance:restaassured.GetEmployees@26653222]" name="emp" duration-ms="2360" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emp -->
+      </class> <!-- restaassured.GetEmployees -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

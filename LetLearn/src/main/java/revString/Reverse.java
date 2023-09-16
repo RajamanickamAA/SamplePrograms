@@ -12,7 +12,7 @@ public class Reverse {
 			System.out.println(value[i]);
 
 		}
-		int s1 = 	Integer.valueOf(S1);
+		Integer s1 = 	Integer.valueOf(S1);
 		System.out.println(s1);
 
 		String s2 = Integer.toString(s1);
@@ -21,8 +21,7 @@ public class Reverse {
 		char s3 = S1.charAt(1);
 		System.out.println(s3);
 		
-	int	s4 = s2.compareTo(S1);
-	System.out.println(s4);
+		s1.toString();
 		
 		
 	}

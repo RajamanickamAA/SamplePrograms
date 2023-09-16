@@ -1,6 +1,10 @@
 package testsmall;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class WriteSampleProg {
 
@@ -11,7 +15,9 @@ public class WriteSampleProg {
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://google.com");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(30, null);
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		//wait.until(ExpectedConditions.visibilityOf(element));
 		driver.quit();
 
 	}

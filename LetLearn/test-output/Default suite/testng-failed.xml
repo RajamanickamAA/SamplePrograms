@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="restaassured.GetEmployees">
+      <class name="episode57.loginUsingDataprovider">
         <methods>
-          <include name="emp"/>
+          <include name="login"/>
         </methods>
-      </class> <!-- restaassured.GetEmployees -->
+      </class> <!-- episode57.loginUsingDataprovider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

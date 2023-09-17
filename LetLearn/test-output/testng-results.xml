@@ -1,17 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2380" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
+  <suite name="Default suite" duration-ms="62665" started-at="2023-09-17T16:29:32Z" finished-at="2023-09-17T16:30:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2380" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
-      <class name="restaassured.GetEmployees">
-        <test-method status="PASS" signature="emp()[pri:0, instance:restaassured.GetEmployees@26653222]" name="emp" duration-ms="2360" started-at="2023-09-09T11:49:22Z" finished-at="2023-09-09T11:49:25Z">
+    <test name="Default test" duration-ms="62665" started-at="2023-09-17T16:29:32Z" finished-at="2023-09-17T16:30:34Z">
+      <class name="episode61.SignIn">
+        <test-method status="PASS" signature="HomeScreen(java.lang.String, java.lang.String)[pri:0, instance:episode61.SignIn@5622fdf]" name="HomeScreen" duration-ms="5039" started-at="2023-09-17T16:29:32Z" data-provider="testdata" finished-at="2023-09-17T16:29:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Koushik350@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emp -->
-      </class> <!-- restaassured.GetEmployees -->
+        </test-method> <!-- HomeScreen -->
+        <test-method status="PASS" signature="HomeScreen(java.lang.String, java.lang.String)[pri:0, instance:episode61.SignIn@5622fdf]" name="HomeScreen" duration-ms="17531" started-at="2023-09-17T16:29:37Z" data-provider="testdata" finished-at="2023-09-17T16:29:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Koushik350@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+        <test-method status="PASS" signature="HomeScreen(java.lang.String, java.lang.String)[pri:0, instance:episode61.SignIn@5622fdf]" name="HomeScreen" duration-ms="18096" started-at="2023-09-17T16:29:55Z" data-provider="testdata" finished-at="2023-09-17T16:30:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Koushik350@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+        <test-method status="PASS" signature="HomeScreen(java.lang.String, java.lang.String)[pri:0, instance:episode61.SignIn@5622fdf]" name="HomeScreen" duration-ms="16249" started-at="2023-09-17T16:30:13Z" data-provider="testdata" finished-at="2023-09-17T16:30:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Koushik350@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+        <test-method status="PASS" signature="HomeScreen(java.lang.String, java.lang.String)[pri:0, instance:episode61.SignIn@5622fdf]" name="HomeScreen" duration-ms="5102" started-at="2023-09-17T16:30:29Z" data-provider="testdata" finished-at="2023-09-17T16:30:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Pass123$]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomeScreen -->
+      </class> <!-- episode61.SignIn -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

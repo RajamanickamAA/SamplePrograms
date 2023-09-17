@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="password" value="Pass123$"/>
+  <parameter name="emailID" value="Koushik350@gmail.com"/>
+  <test thread-count="5" name="foxBrowser(failed)" parallel="tests">
+    <parameter name="Browser" value="Firefox"/>
     <classes>
-      <class name="learnTestNG.LaunchChrome">
+      <class name="episode55.CrossBrowserTesting">
         <methods>
-          <include name="launch"/>
+          <include name="LaunchBrowser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- learnTestNG.LaunchChrome -->
+      </class> <!-- episode55.CrossBrowserTesting -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- foxBrowser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

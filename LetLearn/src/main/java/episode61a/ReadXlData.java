@@ -12,36 +12,50 @@ import org.testng.annotations.Test;
 
 
 public class ReadXlData {
-	
-	@DataProvider()
-	
-	public String[][] testdata() throws IOException {
-	
-	String filelocation = "./TestData/Data.xlsx";
-	XSSFWorkbook wbook = new XSSFWorkbook(filelocation);
-	XSSFSheet sheet = wbook.getSheetAt(0);
-	int lastrow = sheet.getLastRowNum();
-	short lastcell = sheet.getRow(0).getLastCellNum();
-	String[][] data = new String[lastrow][lastcell];
-	for (int i = 1; i <= lastrow; i++) {
-		XSSFRow row = sheet.getRow(i);
-		for (int j = 0; j < lastcell; j++) {
-			XSSFCell cell = row.getCell(j);
-			DataFormatter dft = new DataFormatter();
-			String value = dft.formatCellValue(cell);
-			//String value = cell.getStringCellValue();
-			//System.out.println(value);
-			data[i-1][j] = value;
-		} 
-	}
-	
-	wbook.close();
-	
-	return data;
-	
-	
-	}
-	
-	
 
-}
+	@DataProvider
+
+	public String[][] testdata() throws IOException {
+
+		String filelocation ="./TestData/Data.xlsx";
+		XSSFWorkbook wbook = new XSSFWorkbook(filelocation);
+		XSSFSheet sheet = wbook.getSheetAt(0);
+		int rowcount = sheet.getLastRowNum();
+		System.out.println(rowcount);
+		short cellcount = sheet.getRow(0).getLastCellNum();
+		System.out.println(cellcount);
+		String [][] data = new String[rowcount][cellcount];
+		for (int i = 1; i <= rowcount; i++) {
+			XSSFRow row = sheet.getRow(i);
+			for (int j = 0; j < cellcount; j++) {
+				XSSFCell cell = row.getCell(j);
+				DataFormatter dft = new DataFormatter();
+				String value = dft.formatCellValue(cell);
+				data[i-1][j] = value;
+			} 
+		}
+		wbook.close();
+		return data;
+
+		/*
+		 * String filelocation = "./TestData/Data.xlsx"; XSSFWorkbook wbook = new
+		 * XSSFWorkbook(filelocation); XSSFSheet sheet = wbook.getSheetAt(0); int
+		 * lastrow = sheet.getLastRowNum(); short lastcell =
+		 * sheet.getRow(0).getLastCellNum(); String[][] data = new
+		 * String[lastrow][lastcell]; for (int i = 1; i <= lastrow; i++) { XSSFRow row
+		 * =sheet.getRow(i); for (int j = 0; j < lastcell; j++) { XSSFCell cell =
+		 * row.getCell(j); DataFormatter dft = new DataFormatter(); String value =
+		 * dft.formatCellValue(cell); //String value = cell.getStringCellValue();
+		 * //System.out.println(value); data[i-1][j] = value; } }
+		 * 
+		 * wbook.close();
+		 * 
+		 * return data;
+		 */
+
+
+			}
+
+
+
+		}
